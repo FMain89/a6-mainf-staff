@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Freddie Main III</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <header><h1> Freddie Main III | Order</h1></header>
+    <nav>
+        <a href="index.html">Homepage</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="order.html">Order</a>
+        <a href="staff.html">Staff</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Order Form</h2>
+                <article id = "Order-form">
+                    <p>Below is an order form for some items we have for sale. Due to shipping logistics you can only purchase one item at a time. Sorry for any inconvience. </p>
+
+                    <form action="/summary" method="POST">
+                        <fieldset>                  
+                            <legend>Basic Information</legend>
+                            <p><label for="firstlast">First and Last Name: <span class="req">*</span>
+                                  <input type="text" 
+                                    name="firstlast" 
+                                    id="firstlast" 
+                                    size="30" 
+                                    maxlength="100" 
+                                    class="required"
+                                    required placeholder="First and last name" 
+                                    autofocus 
+                                    />
+                              </label>
+                            </p>
+        
+                            <p>
+                              <label for="email">Email: <span class="req">*</span>
+                                  <input type="email" 
+                                    name="email" id="email" 
+                                    size="30" maxlength="100" 
+                                    class="required"
+                                    pattern="[^ @]+@[^ @]+.[a-z]+"
+                                    placeholder="name@host.com"
+                                    />
+                              </label>        
+                            </p>
+                            
+                            <p><label for="street">Street Adress: <span class="req">*</span>
+                                <input type="text" 
+                                  name="street" 
+                                  id="street" 
+                                  size="30" 
+                                  maxlength="100" 
+                                  class="required"
+                                  required placeholder="Street Address" 
+                                  />
+                            </label>
+                            </p>
+
+                            <p><label for="zip">Zip or Postal Code: <span class="req">*</span>
+                                <input type="text" 
+                                name="zip" 
+                                id="zip" 
+                                size="30" 
+                                maxlength="9" 
+                                class="required"
+                                required placeholder="Zip Code" 
+                                />
+                            </label>
+                            </p>
+
+                            <p><label for="city">City: <span class="req">*</span>
+                                <input type="text" 
+                                name="city" 
+                                id="city" 
+                                size="30" 
+                                maxlength="100" 
+                                class="required"
+                                required placeholder="City" 
+                                />
+                            </label>
+                            </p>
+
+                            <p><label for="state">State: <span class="req">*</span>
+                                <input type="text" 
+                                name="state" 
+                                id="State" 
+                                size="30" 
+                                maxlength="100" 
+                                class="required"
+                                required placeholder="State" 
+                                />
+                            </label>
+                            </p>
+        
+                            <p><span class="req">*</span> - Required Field</p>
+                        </fieldset>
+                        <fieldset>                  
+                            <legend>Items for Sale</legend>
+                            <table>
+                                <caption>Inventory</caption>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Company</th>
+                                    <th>Price</th>
+                                    <th>Item you are interested in</th>
+                                </tr>
+                                <tr>
+                                    <td>Spinning Cat Scratcher Ball</td>
+                                    <td>AGYM</td>
+                                    <td>$52.99</td>
+                                    <td><label for="Spinning Cat Scratcher Ball">
+                                        <input type="radio"
+                                          name="Items" 
+                                          id="Spinning Cat Scratcher Ball"
+                                          value="Spinning Cat Scratcher Ball">
+                                      </label></td>
+                                </tr>
+                                <tr>
+                                    <td>Foldable Dog Pool</td>
+                                    <td>Jasonwell</td>
+                                    <td>$27.25</td>
+                                    <td><label for="Foldable Dog Pool">
+                                        <input type="radio"
+                                          name="Items" 
+                                          id="Foldable Dog Pool"
+                                          value="Foldable Dog Pool">
+                                      </label></td>
+                                </tr>
+                                <tr>
+                                    <td>Dog Fence Window</td>
+                                    <td>Expawlorer</td>
+                                    <td>$30.50</td>
+                                    <td><label for="Dog Fence Window">
+                                        <input type="radio"
+                                          name="Items" 
+                                          id="Dog Fence Window"
+                                          value="Dog Fence Window">
+                                      </label></td>
+                                </tr>
+                                <tr>
+                                    <td>Capsule Pet Travel Backpack</td>
+                                    <td>Lollimeow</td>
+                                    <td>$59.00</td>
+                                    <td><label for="Capsule Pet Travel Backpack">
+                                        <input type="radio"
+                                          name="Items" 
+                                          id="Capsule Pet Travel Backpack"
+                                          value="Capsule Pet Travel Backpack">
+                                      </label></td>
+                                </tr>
+                                <tr>
+                                    <td>Cat Hamster Wheel</td>
+                                    <td>'Drool'd'</td>
+                                    <td>$349.75</td>
+                                    <td><label for="Cat Hamster Wheel">
+                                        <input type="radio"
+                                          name="Items" 
+                                          id="Cat Hamster Wheel"
+                                          value="Cat Hamster Wheel">
+                                      </label></td>
+                                </tr>
+                            </table>
+                            
+                            <p><label for="quantity">Quantity: <span class="req">*</span>
+                                <input type="number" 
+                                name="quantity" 
+                                id="quantity" 
+                                class="required"
+                                required placeholder="Quantity" 
+                                />
+                            </label>
+                            </p>
+                            <p><label for="delivery">Delivery Instructions</label>
+                                <textarea name="delivery" 
+                                id="delivery" 
+                                min="3" 
+                                max="250"                                 
+                                placeholder="Any Specific Delivery Instructions?"
+                                ></textarea>
+                            </p>
+
+                        <label for="submit">Finish Order</label>
+                        <button type="submit" id="summary" name="summary">Submit</button>
+                        </fieldset>
+
+                    </form>
+                </article>
+        </section>
+    </main>
+    <footer><p> &copy; Freddie Main III, 2023</p></footer>
+</body> 
+</html>

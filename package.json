@@ -1,0 +1,25 @@
+{
+  "name": "a5-mainf-app",
+  "version": "1.0.0",
+  "description": "Web connect app using Node and Express for assignment 4.",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.mjs"
+  },
+  "keywords": [
+    "express",
+    "node",
+    "app"
+  ],
+  "author": "Freddie Main III",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "node-fetch": "^3.3.0",
+    "nodemailer": "^6.9.1",
+    "nodemon": "^2.0.20"
+  }
+}

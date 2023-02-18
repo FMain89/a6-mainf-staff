@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Freddie Main III</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <main>
+        <section>         
+            <header><h1> Freddie Main III | Contact</h1></header>
+                <nav>
+                    <a href="index.html">Homepage</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="order.html">Order</a>
+                    <a href="staff.html">Staff</a>
+                </nav>
+        </section>
+        <section>
+            <p>Below we have a basic form and survey for you to fill out. First Name and Last name, Email and a short message are all required. All the other information 
+                is optional. The gathered data from the survey will allow us to get to know the end user better and make a more taylored experience on this site for you.
+                your time is most appreciated!</p>
+
+
+            <form action="/results" method="POST">
+                <fieldset>                  
+                    <legend>Basic Information</legend>
+                    <p><label for="firstlast">First and Last Name: <span class="req">*</span>
+                          <input type="text" 
+                            name="firstlast" 
+                            id="firstlast" 
+                            size="30" 
+                            maxlength="100" 
+                            class="required"
+                            required placeholder="First and last name" 
+                            autofocus 
+                            />
+                      </label>
+                    </p>
+
+                    <p>
+                      <label for="email">Email: <span class="req">*</span>
+                          <input type="email" 
+                            name="email" id="email" 
+                            size="30" maxlength="100" 
+                            class="required"
+                            pattern="[^ @]+@[^ @]+.[a-z]+"
+                            placeholder="name@host.com"
+                            />
+                      </label>        
+                    </p>
+                    
+                    <p><label for="comments">Do you have any further comments?<span class="req">*</span></label>
+                        <textarea name="comments" 
+                        id="comments" 
+                        min="3" 
+                        max="250"
+                        class="required" 
+                        placeholder="Write 250 characters or less."
+                        ></textarea>
+                    </p>
+
+                    <p><span class="req">*</span> - Required Field</p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Survey for Us</legend>
+
+                    <label for="what">What is your favorite sport?</label>
+                        <select name="sport" id="what">
+                            <option value="Football">Football</option>
+                            <option value="Basketball">Basketball</option>
+                            <option value="Baseball">Baseball</option>
+                            <option value="Hockey">Hockey</option>
+                            <option value="Other" selected>Other</option>
+                        </select>
+
+                    <p>Favorite Type of Video Game?
+                        <label for="RPG/Stratagy">
+                            <input type="checkbox" 
+                            name="vg" 
+                            id="RPG/Stratagy" 
+                            value="RPG/Stratagy">
+                            RPG/Stratagy
+                        </label>
+
+                        <label for="FPS">
+                            <input type="checkbox" 
+                            name="vg" 
+                            id="FPS" 
+                            value="FPS">
+                            FPS
+                        </label>
+
+                        <label for="Sports/Simulation">
+                            <input type="checkbox" 
+                            name="vg" 
+                            id="Sports/Simulation" 
+                            value="Sports/Simulation">
+                            Sports/Simulation
+                        </label>
+
+                        <label for="Sandbox">
+                            <input type="checkbox" 
+                            name="vg" 
+                            id="Sandbox" 
+                            value="Sandbox">
+                            Sandbox
+                        </label>
+
+                        <label for="Other">
+                            <input type="checkbox" 
+                            name="vg" 
+                            id="Other" 
+                            value="Other">
+                            Other
+                        </label>  
+                    </p>
+                 
+                    <p>Prefered Pronouns:</p>
+                    <p><label for="Pronouns">
+                      <input type="radio"
+                        name="Pronouns" 
+                        id="He/Him"
+                        value="He/Him">
+                        He/Him
+                    </label>
+                    </p>
+
+                    <p>
+                        <label for="Pronouns">
+                        <input type="radio"
+                            name="Pronouns" 
+                            id="She/Her"
+                            value="She/Her">
+                            She/Her
+                    </label>
+                    </p>
+
+                    <p>
+                        <label for="Pronouns">
+                        <input type="radio"
+                            name="Pronouns"
+                            id="They/Them"
+                            value="They/Them">
+                            They/Them
+                    </label>
+                    </p>
+
+                    <p>
+                        <label for="Pronouns">
+                        <input type="radio"
+                            name="Pronouns"
+                            id="Other"
+                            value="Other">
+                            Other
+                    </label>
+                    </p>
+                    <label for="submit"> Submit Your Survey</label>
+                    <button type="submit" id="submit" name="results">Submit</button>
+
+                </fieldset>
+         
+                
+            </form>
+        </section>
+
+
+</main>
+    <footer> <p>&copy; Freddie Main III, 2023</p></footer>
+</body> 
+</html>

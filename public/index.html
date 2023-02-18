@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Freddie Main III</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <header><h1> Freddie Main III</h1></header>
+    <nav>
+        <a href="index.html">Homepage</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="order.html">Order</a>
+        <a href="staff.html">Staff</a>
+    </nav>
+
+    <main>
+    <section>
+        <h2> Web Development Concepts</h2>
+        <nav class="index-nav">
+            <a href="#web-servers">Web Servers</a>
+            <a href="#frontend-design">Frontend Design</a>
+            <a href="#optimizing-images">Optimizing images</a>
+            <a href="#cascading-stylesheets">Cascading Stylesheets</a>
+            <a href="#forms">Froms</a>
+            <a href="#npm-node-express">NPM, Node and Express</a>
+            <a href="#javascript">JavaScript</a>
+        </nav>
+            <article id="web-servers">
+                <h3> About Web Servers</h3>
+                    <p>Using Visual Studio Code I was able to create an html document named index.html. This document uses basic html language to set the pages tab title, 
+                        create a page header and a body which you are reading now. By uploading the index.html document to the Oregon server, the document turns into this home page.
+                        This document, “index.html”,  is sitting on the server and allows it to index this site. When the URL is called, it locates this document and displays it on 
+                        the web browser.
+                    </p>
+            
+                <p>index.html (document) has a status of 200, main.css (stylesheet) and main.js (script) have a failed status.
+                </p>
+            
+                <p> The time to call the file has increased, there is an new file named favicon.ico added to the list and the status of main.css and main.js have changed.
+
+                </p>
+            
+                <p>favicon.ico has a status of 200 because it is supplied by the server. This file sits on the server. main.css and main.js have a status of 404. Meaning that the error
+                    is with the client.
+                </p>
+            
+                <p>The URL address Https://web.engr.oregonstate.edu/~ONIDusername/a1-username, can be broken down into several parts and can be inspected to see what resources it has.
+                    Schema: HTTPS,  Subdomain: web.engr,  Host domain: Oregonstate.edu and the resources for the site: index.html and main.css
+                </p>
+            </article>
+                       
+            <article id="frontend-design">
+                <h3> Frontend Design</h3>
+                    <p>The front end design is all about what the user sees and experiences. This includes the visual design of the page, the GUI (Graphical user-interface) and the overall
+                        experience of the page. Things like the color scheme, fonts, typography, navigation and illustration themes all fall in the front end design. 
+                    </p>
+                    <p>The five "E's" of usability according to Key Lime Interactive. They boil down usability to simple key factors that can affect the user's experience with the site.
+                    </p>
+                        <dl>
+                            <dt><strong>Effective</strong></dt>
+                            <dd>Does the site meet the purpose of why the user is here? An effective site will meet the needs of the visiting user.</dd>
+                            <dt><strong>Efficient</strong></dt>
+                            <dd>Can the user meet their purpose quickly? An efficient site will allow the user to get what they need quickly and with as few steps as possible.</dd>
+                            <dt><strong>Easy to Navigate</strong></dt>
+                            <dd>Is the layout of the site easy to understand? The user might not have ever seen the site before, so the user will need to be able to intuitively navigate
+                                 through the site. </dd>
+                            <dt><strong>Error-Free</strong></dt>
+                            <dd>Will the user run into roadblocks? Learning and watching how users use the site can help solve any issues with flow or errors in the site. 
+                                Quality control of the site can help find bugs, errors and issues before they are released to the public.  </dd>
+                            <dt><strong>Enjoyable or Engaging</strong></dt>
+                            <dd>Will the user come back to the site? If the site meets the needs of the user, and through effective use of the other four "E's" it could bring users back.</dd>
+                        </dl>
+                    <p>Page layout tags allow sections to be broken up, and gives developers more tools to organize the site. The page layouts also help machines, such as search engines and screen readers,
+                         understand the content on the page. Page tags include things like "header", "nav", "main", "section", "articles","asides",and "footer".
+                        </p>
+                    <p>Using anchor elements allows you to link static HTML documents on your site. Using the "href" attribute and the name of the HTML document and can create easy to use link to other pages
+                         on the site.
+                    </p>
+            </article>
+
+            <article id = "optimizing-images">
+                <h3> Optimizing Images</h3>
+                    <h4> The Six Major Specifications for Images on the Web</h4>
+                        <ul>
+                            <li>
+                                <strong>Descriptive File Names</strong>
+                                <p>
+                                    In an effort to help out search engines, file names should include as much detail as possible while keeping the name concise. File names should include a who, what, 
+                                    when and where if possible. 
+                                </p>
+                            </li>
+                            <li>
+                                <strong>Small File Sizes</strong>
+                                <p>
+                                    Image file sizes should be optimized to maintain quality, but still need to include fast load times. This can be done by using lossless compression for 
+                                    <strong>.GIF</strong> and <strong>.PNG</strong> files or lossy for <strong>.JPG</strong> and <strong>.WEBP</strong>  files.
+                                </p>
+                            </li>
+                            <li>
+                                <strong>Make Dimensions Exact</strong>
+                                <p>
+                                    With limited space on the web page, making sure the size of the image is just right for the user to see. This can be accomplished by cropping and reducing 
+                                    the size of the image.
+                                </p>
+                            </li>
+                            <li>
+                                <strong>Correct File Format</strong>
+                                <p>
+                                    Photos have many differnt file types with different purposes. <strong>.JPG</strong> and <strong> .WebP</strong> are great for photographic images, with minimal losses in compression.<strong>.GIF</strong> are typically used for line-art graphics, with the current tend being short animated photos or videos.
+                                    <strong>.PNG</strong> files offer true transparancy through the alpha channel and are best suited for biomorphic shapes and line-art. <strong>.SVG</strong> files or Scalable Vector Graphics are good for logos, and interactive or animated images. 
+                                </p>
+                            </li>
+                            <li>
+                                <strong>Reducing the Resolution</strong>
+                                <p>
+                                    By providing multiple image sizes it can improve the user experience on different equipment, like older monitors, tablets or phones.
+                                </p>
+                            </li>
+                            <li>
+                                <strong>Color Mode</strong>
+                                <p>
+                                    <strong>.PNG, .JPEG, .SVG, .WebP </strong> use RGB for their color mode, whereas <strong>.GIF </strong> uses an indexed color mode.
+                                </p>
+                            </li>
+                        </ul>
+                        <h4>File formats for Images on the Web</h4>
+                            <p>There is a reason why we have so many different file types for images, they all have different strengths and weaknesses. Take <strong>.JPG</strong> and <strong>.WEBP</strong> files,
+                                 both are great at photographic images. However, <strong>.WEBP</strong> also has an alpha channel which allows the transparency to be adjusted and tends to compress to a                                 smaller file size.
+                                <strong>.SVG</strong> are mathematically derived images and can be scaled smoothly, making them great for logos and line-art. <strong>.PNG</strong> has the alpha channel for transparency, 
+                                and little distortion. .GIF are typically used for short videos or animated pictures, but have quality issues due to antialiasing over one background.                   
+                            </p>
+            </article>
+
+            <article id = "cascading-stylesheets">
+                <h3>Cascading Stylesheets</h3>
+                    <h4>Why Incorporate Stylesheets?</h4>
+                        <p>Style Sheets allow the page to get a more custom look and control the style with one separate document. It is easy to maintain the look of the site across
+                            multiple pages while using a stylesheet. This common practice is called a global stylesheet, and is easily done with a link in the header of the .HTML document.                            
+                        </p>
+
+                    <h4>Five Ways to Incorporate Styles</h4>
+                    <ul>
+                        <li>
+                            <strong>Link to stylesheet</strong>: 
+                                <p>Uses the &apos;link&apos; in the head section of the HTML document.</p>
+                        </li>
+                        <li>
+                            <strong>Embedded</strong>: 
+                                <p>Uses the &apos;style&apos; tag.</p>
+                        </li>
+                        <li>
+                            <strong>Inline</strong>: 
+                                <p>List attribute and value pairs inside the opening tag.</p>
+                        </li>
+                        <li>
+                            <strong>JavaScript template literals</strong>: 
+                                <p>Inside JavaScript strings using backticks.</p>
+                        </li>
+                        <li>
+                            <strong>Regular JavaScript</strong>:
+                                <p>Follows the tag name.</p>
+                        </li>
+                    </ul>
+            </article>
+
+            <article id="forms">
+                <h3>Forms</h3>
+                    <h4>Acessable Forms</h4>
+                    <p>There are six major goals of accessible forms:</p>
+                    <ul>
+                        <li>
+                            <strong>Clear Instructions</strong>:
+                            <p>Gives the users clear instructions on what they are filling out and how to do the 
+                                tasks needed.
+                            </p>
+                        </li>
+                        <li>
+                            <strong>Let users know why and what fields are required</strong>:
+                            <p>The users will want to know what is required to fill out and why you are gathering 
+                                the data.
+                            </p>
+                        </li>
+                        <li>
+                            <strong>Set first field to autofocus</strong>:
+                            <p>This will allow the user to start typing without using the keyboard.</p>
+                        </li>
+                        <li>
+                            <strong>Ensure a keyboard can be used for all fields</strong>:
+                            <p>This will allow users who can’t use trackpads or a mouse to fill out the forms.
+                            </p>
+                        </li>
+                        <li>
+                            <strong>Use tab indexing</strong>:
+                            <p>This makes it clear on what order the fields should be filled out.</p>
+                        </li>
+                        <li>
+                            <strong>Ensure validation messages are readable</strong>:
+                            <p>This is because built in HTML browser messages are not screen readable.</p>
+                        </li>
+                    </ul>
+
+                    <h4>Major Tags</h4>
+                        <p>When we use forms we have several major tags to create the fillable forms. Tags like form  is what actually creates the form on the site.
+                             We can also use fieldset to create groups within the given form to organize it. Now that we have a form, and have an area to organize
+                                 it, we can use: input, select, textarea and button to create the areas to collect data</p>
+                        <P>With input we have all sorts of types we can use, like email, checkbox, and radio. The type email is just like it sounds. It is used to
+                             collect the user's email address and checks to make sure it is a valid entry. Checkbox is used when the user might want to click on more
+                              than one option, whereas radio is just for one singular option.</P>
+                        <P>select is used when you want to give the user a drop down list of choices. This can help keep the website looking clean and clutter
+                             free. This doesn’t use a large portion of the screen for a long list like checkbox or radio could do. </P>
+                        <P>textarea is used when you want to let the user send a message, or get a written response</P>
+                        <P>button is how you can end the form, send the information to the server and let the user know they have completed the form. </P>
+                    <h4>Style</h4>
+                            <p>Editing things like fieldset, autofocus, legend and label can all help highlight and make the form more user friendly. It can also make it known where to start, prompts for things and what is required for the form. Making a section for input, button, textarea, and select will let you increase font size, add padding to help with arthritic hands and any typo mistakes on the keyboard.</p>
+
+
+            </article>
+            <article id="npm-node-express">
+                <h3> NPM, Node and Express</h3>
+                    <h4>NPM</h4>
+                    <P>NPM or Node Package Manager is part of the Node package, which we will discuss in the next section. NPM is an online repository of Node.js
+                         packages. It is also a command-line utility that can install and manage these packages for our purposes. There are a few basic commands
+                          that we can use with NPM like “npm init”, “npm install package” or “npm start”.
+                     </P>
+
+                    <h4>Node</h4>
+                    <P>Node is a server side platform using JavaScript and was developed in 2009. Node is an open source cross platform for server side development.
+                         Node has various applications that are written in JavaScript, and has a vast library of Modules for web development. Node is the backbone 
+                         to build a great user interface. With the vast library it has, you can create a more tailored and better experience for the user by utilizing
+                          its tools.
+                     </P>
+
+                    <h4>Express</h4>
+                    <P>Express is a popular framework with JavaScript. It allows the use of Application Programming Interfaces for various common tasks that web
+                         interfaces need to do. Express allows the use of get, post, delete of data and allows us to define the ports and routes the data will take.
+                          It also allows the creation of templates and builds a dynamic response that incorporates user inputted data. This allows the user to 
+                          receive a less robotic and more personalized message enriching the users experience with the site. 
+                    </P>
+
+            </article>
+            <article id="javascript">
+                <h3>JavaScript</h3>
+                    <p>JavaScript consists of these main data types, number, boolean, string, symbol, special value, or an object. Objects in JavaScript consist 
+                        of Name-Value Pairs. Objects in JavaScript can be created, updated, read and deleted. Allowing you to do various things on a database. 
+                        In JavaScript arrays are objects whose names are string values. JSON or JavaScript Object Notation is used to exchange data between 
+                        applications, it can also be used with Python, Java, C# and others. Because of this utility JSON files can be used to pass data around 
+                        to various applications and complete the tasks needed. 
+                    </p>
+                    <p>Conditionals in JavaScript are used by the “if” and “switch” statements and are very similar to other programming languages in syntax. 
+                        It evaluates if the given conditional requirements are met and outputs a true or false. When using these statements it allows us to compare 
+                        things using the typical conditionals, equal to, not equal, strict equal, strict not equal, greater than, less than, greater than or equal, 
+                        less than or equal. Looping in JavaScript is similar to looping in other programming languages as well. This allows you to go through an 
+                        expression of the loop as long as it is true, and ends when it no longer is true. 	
+                    </p>
+                    <p>JavaScript is an object-oriented programming language, objects are created by cloning existing objects, rather than by defining classes. 
+                        This can provide a flexible and dynamic way to define objects and their behavior, and it is a key part of the language's expressiveness and 
+                        versatility.
+                    </p>
+                    <p>In JavaScript, functional programming can be achieved by using functions as first-class citizens, and by avoiding side effects and mutable 
+                        state as much as possible. This means that you should aim to write functions that take inputs and return outputs, without modifying any 
+                        external state or data. Functional programming also often involves the use of higher-order functions, which are functions that take other 
+                        functions as inputs or return functions as outputs. Functional programming in JavaScript can help you write more concise, maintainable, and 
+                        predictable code, and it is a useful approach to have in your toolkit when working with the language.
+                    </p>
+
+            </article>
+
+    </section>
+    </main>
+    <footer><p> &copy; Freddie Main III, 2023</p></footer>
+</body> 
+</html>
